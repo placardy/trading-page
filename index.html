@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TradePro - Курсы по трейдингу</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+        .float-animation { animation: float 3s ease-in-out infinite; }
+        
+        @keyframes scale-pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        .pulse-scale { animation: scale-pulse 2s ease-in-out infinite; }
+    </style>
+</head>
+<body class="bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950 text-white">
+    
+    <!-- Header -->
+    <header id="header" class="fixed top-0 w-full z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <svg class="w-8 h-8 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+                </svg>
+                <span class="text-2xl font-bold">TradePro</span>
+            </div>
+            <a href="https://t.me/yourchannel" target="_blank" rel="noopener noreferrer" class="bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600 px-6 py-2.5 rounded-full font-semibold transition-all flex items-center gap-2 shadow-lg hover:shadow-emerald-500/50">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path>
+                </svg>
+                Связаться
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-8">
+                    <div class="inline-block px-4 py-2 bg-emerald-500/10 border border-emerald-500/20 rounded-full text-emerald-400 text-sm font-semibold">
+                        🚀 Старт нового потока через 7 дней
+                    </div>
+                    <h1 class="text-5xl lg:text-6xl font-bold leading-tight">
+                        Научитесь торговать на <span class="bg-gradient-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent">финансовых рынках</span>
+                    </h1>
+                    <p class="text-xl text-slate-300 leading-relaxed">
+                        От новичка до профессионального трейдера за 3 месяца. Практические знания, реальные результаты.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="https://t.me/yourchannel" target="_blank" rel="noopener noreferrer" class="bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600 px-8 py-4 rounded-full font-bold text-lg transition-all flex items-center gap-2 shadow-xl hover:shadow-emerald-500/50 hover:scale-105">
+                            Начать обучение
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </a>
+                        <button class="border-2 border-slate-700 hover:border-emerald-500/50 px-8 py-4 rounded-full font-bold text-lg transition-all hover:bg-slate-800/50">
+                            Бесплатный урок
+                        </button>
+                    </div>
+                    <div class="flex gap-8 pt-4">
+                        <div>
+                            <div class="text-3xl font-bold text-emerald-400">2500+</div>
+                            <div class="text-slate-400">Выпускников</div>
+                        </div>
+                        <div>
+                            <div class="text-3xl font-bold text-emerald-400">4.9/5</div>
+                            <div class="text-slate-400">Рейтинг курса</div>
+                        </div>
+                        <div>
+                            <div class="text-3xl font-bold text-emerald-400">94%</div>
+                            <div class="text-slate-400">Успех студентов</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative float-animation">
+                    <div class="absolute inset-0 bg-gradient-to-r from-emerald-500/20 to-teal-500/20 blur-3xl"></div>
+                    <div class="relative bg-slate-800/50 backdrop-blur-sm border border-slate-700 rounded-2xl p-8 shadow-2xl">
+                        <div class="space-y-6">
+                            <div class="flex items-center justify-between">
+                                <span class="text-slate-400">BTC/USDT</span>
+                                <span class="text-emerald-400 font-bold">+12.5%</span>
+                            </div>
+                            <div class="h-48 flex items-end gap-2">
+                                <div class="flex-1 bg-gradient-to-t from-emerald-500 to-teal-400 rounded-t opacity-80 hover:opacity-100 transition-opacity" style="height: 40%"></div>
+                                <div class="flex-1 bg-gradient-to-t from-emerald-500 to-teal-400 rounded-t opacity-80 hover:opacity-100 transition-opacity" style="height: 65%"></div>
+                                <div class="flex-1 bg-gradient-to-t from-emerald-500 to-teal-400 rounded-t opacity-80 hover:opacity-100 transition-opacity" style="height: 45%"></div>
+                                <div class="flex-1 bg-gradient-to-t from-emerald-500 to-teal-400 rounded-t opacity-80 hover:opacity-100 transition-opacity" style="height: 80%"></div>
+                                <div class="flex-1 bg-gradient-to-t from-emerald-500 to-teal-400 rounded-t opacity-80 hover:opacity-100 transition-opacity" style="height: 60%"></div>
+                                <div class="flex-1 bg-gradient-to-t from-emerald-500 to-teal-400 rounded-t opacity-80 hover:opacity-100 transition-opacity" style="height: 95%"></div>
+                                <div class="flex-1 bg-gradient-to-t from-emerald-500 to-teal-400 rounded-t opacity-80 hover:opacity-100 transition-opacity" style="height: 75%"></div>
+                                <div class="flex-1 bg-gradient-to-t from-emerald-500 to-teal-400 rounded-t opacity-80 hover:opacity-100 transition-opacity" style="height: 88%"></div>
+                                <div class="flex-1 bg-gradient-to-t from-emerald-500 to-teal-400 rounded-t opacity-80 hover:opacity-100 transition-opacity" style="height: 70%"></div>
+                                <div class="flex-1 bg-gradient-to-t from-emerald-500 to-teal-400 rounded-t opacity-80 hover:opacity-100 transition-opacity" style="height: 85%"></div>
+                                <div class="flex-1 bg-gradient-to-t from-emerald-500 to-teal-400 rounded-t opacity-80 hover:opacity-100 transition-opacity" style="height: 95%"></div>
+                                <div class="flex-1 bg-gradient-to-t from-emerald-500 to-teal-400 rounded-t opacity-80 hover:opacity-100 transition-opacity" style="height: 100%"></div>
+                            </div>
+                            <div class="grid grid-cols-3 gap-4 pt-4 border-t border-slate-700">
+                                <div>
+                                    <div class="text-slate-400 text-sm">Объем</div>
+                                    <div class="font-bold">$2.4B</div>
+                                </div>
+                                <div>
+                                    <div class="text-slate-400 text-sm">Макс</div>
+                                    <div class="font-bold">$68,450</div>
+                                </div>
+                                <div>
+                                    <div class="text-slate-400 text-sm">Мин</div>
+                                    <div class="font-bold">$66,200</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="py-20 px-6 bg-slate-900/50">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-16">
+                Почему <span class="text-emerald-400">TradePro</span>
+            </h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-slate-800/50 backdrop-blur-sm border border-slate-700 rounded-xl p-6 hover:border-emerald-500/50 transition-all hover:scale-105 group">
+                    <svg class="w-8 h-8 text-emerald-400 mb-4 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+                    </svg>
+                    <h3 class="text-xl font-bold mb-3">Практические стратегии</h3>
+                    <p class="text-slate-400">Проверенные методики торговли от профессиональных трейдеров</p>
+                </div>
+                <div class="bg-slate-800/50 backdrop-blur-sm border border-slate-700 rounded-xl p-6 hover:border-emerald-500/50 transition-all hover:scale-105 group">
+                    <svg class="w-8 h-8 text-emerald-400 mb-4 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                    </svg>
+                    <h3 class="text-xl font-bold mb-3">Технический анализ</h3>
+                    <p class="text-slate-400">Научитесь читать графики и находить точки входа</p>
+                </div>
+                <div class="bg-slate-800/50 backdrop-blur-sm border border-slate-700 rounded-xl p-6 hover:border-emerald-500/50 transition-all hover:scale-105 group">
+                    <svg class="w-8 h-8 text-emerald-400 mb-4 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                    <h3 class="text-xl font-bold mb-3">Управление рисками</h3>
+                    <p class="text-slate-400">Защитите свой капитал и торгуйте осознанно</p>
+                </div>
+                <div class="bg-slate-800/50 backdrop-blur-sm border border-slate-700 rounded-xl p-6 hover:border-emerald-500/50 transition-all hover:scale-105 group">
+                    <svg class="w-8 h-8 text-emerald-400 mb-4 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                    </svg>
+                    <h3 class="text-xl font-bold mb-3">Поддержка 24/7</h3>
+                    <p class="text-slate-400">Закрытое комьюнити и еженедельные вебинары</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses -->
+    <section class="py-20 px-6">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-4">Выберите свой курс</h2>
+            <p class="text-slate-400 text-center mb-16 text-lg">Программы для любого уровня подготовки</p>
+            <div class="grid md:grid-cols-3 gap-8">
+                
+                <!-- Basic Course -->
+                <div class="relative bg-slate-800/50 backdrop-blur-sm border border-slate-700 rounded-2xl p-8 hover:border-emerald-500/50 transition-all">
+                    <div class="text-center mb-6">
+                        <h3 class="text-2xl font-bold mb-2">Базовый курс</h3>
+                        <div class="text-4xl font-bold text-emerald-400 mb-4">14,990₽</div>
+                        <div class="flex justify-center gap-4 text-slate-400 text-sm">
+                            <span>4 недели</span>
+                            <span>•</span>
+                            <span>20 уроков</span>
+                        </div>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-start gap-2">
+                            <svg class="w-5 h-5 text-emerald-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                            <span class="text-slate-300">Основы трейдинга</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg class="w-5 h-5 text-emerald-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                            <span class="text-slate-300">Торговые платформы</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg class="w-5 h-5 text-emerald-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                            <span class="text-slate-300">Первые сделки</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg class="w-5 h-5 text-emerald-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                            <span class="text-slate-300">Сертификат</span>
+                        </li>
+                    </ul>
+                    <a href="https://t.me/yourchannel" target="_blank" rel="noopener noreferrer" class="block text-center bg-slate-700 hover:bg-slate-600 px-6 py-3 rounded-full font-bold transition-all">
+                        Записаться
+                    </a>
+                </div>
+
+                <!-- Advanced Course (Popular) -->
+                <div class="relative bg-slate-800/50 backdrop-blur-sm border border-emerald-500 rounded-2xl p-8 scale-105 pulse-scale">
+                    <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-gradient-to-r from-emerald-500 to-teal-500 px-4 py-1 rounded-full text-sm font-bold">
+                        Популярный
+                    </div>
+                    <div class="text-center mb-6">
+                        <h3 class="text-2xl font-bold mb-2">Продвинутый</h3>
+                        <div class="text-4xl font-bold text-emerald-400 mb-4">29,990₽</div>
+                        <div class="flex justify-center gap-4 text-slate-400 text-sm">
+                            <span>8 недель</span>
+                            <span>•</span>
+                            <span>45 уроков</span>
+                        </div>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-start gap-2">
+                            <svg class="w-5 h-5 text-emerald-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                            <span class="text-slate-300">Сложные стратегии</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg class="w-5 h-5 text-emerald-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                            <span class="text-slate-300">Алгоритмы</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg class="w-5 h-5 text-emerald-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                            <span class="text-slate-300">Портфель</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg class="w-5 h-5 text-emerald-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                            <span class="text-slate-300">Менторство</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg class="w-5 h-5 text-emerald-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                            <span class="text-slate-300">VIP-чат</span>
+                        </li>
+                    </ul>
+                    <a href="https://t.me/yourchannel" target="_blank" rel="noopener noreferrer" class="block text-center bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600 px-6 py-3 rounded-full font-bold transition-all">
+                        Записаться
+                    </a>
+                </div>
+
+                <!-- PRO Course -->
+                <div class="relative bg-slate-800/50 backdrop-blur-sm border border-slate-700 rounded-2xl p-8 hover:border-emerald-500/50 transition-all">
+                    <div class="text-center mb-6">
+                        <h3 class="text-2xl font-bold mb-2">PRO трейдер</h3>
+                        <div class="text-4xl font-bold text-emerald-400 mb-4">59,990₽</div>
+                        <div class="flex justify-center gap-4 text-slate-400 text-sm">
+                            <span>12 недель</span>
+                            <span>•</span>
+                            <span>60+ уроков</span>
+                        </div>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-start gap-2">
+                            <svg class="w-5 h-5 text-emerald-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                            <span class="text-slate-300">Институциональный подход</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg class="w-5 h-5 text-emerald-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                            <span class="text-slate-300">Собственные боты</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg class="w-5 h-5 text-emerald-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                            <span class="text-slate-300">1-на-1 консультации</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg class="w-5 h-5 text-emerald-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                            <span class="text-slate-300">Пожизненный доступ</span>
+                        </li>
+                    </ul>
+                    <a href="https://t.me/trading-community-edition2" target="_blank" rel="noopener noreferrer" class="block text-center bg-slate-700 hover:bg-slate-600 px-6 py-3 rounded-full font-bold transition-all">
+                        Записаться
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-20 px-6 bg-gradient-to-r from-emerald-900/20 to-teal-900/20">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-6">Готовы начать зарабатывать?</h2>
+            <p class="text-xl text-slate-300 mb-8">
+                Присоединяйтесь к тысячам успешных трейдеров. Первый урок бесплатно!
+            </p>
+            <a href="https://t.me/yourchannel" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600 px-10 py-5 rounded-full font-bold text-xl transition-all shadow-xl hover:shadow-emerald-500/50 hover:scale-105">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path>
+                </svg>
+                Связаться в Telegram
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-10 px-6 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto text-center text-slate-400">
+            <div class="flex items-center justify-center gap-2 mb-4">
+                <svg class="w-6 h-6 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+                </svg>
